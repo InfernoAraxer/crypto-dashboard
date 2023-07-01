@@ -9,11 +9,7 @@ const NewsFeed = () => {
 
       const options = {
         method: 'GET',
-        url: 'https://crypto-update-live.p.rapidapi.com/news',
-        headers: {
-          'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
-          'X-RapidAPI-Host': 'crypto-update-live.p.rapidapi.com'
-        }
+        url: 'http://localhost:5000/news',
       };
       
       axios.request(options).then((response) => {
